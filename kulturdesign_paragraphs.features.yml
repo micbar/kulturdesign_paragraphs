@@ -1,5 +1,8 @@
 bundle: kulturdesign
 excluded:
+  - core.entity_form_display.node.page.default
+  - field.field.node.page.field_kd_slices
+  - field.storage.node.field_kd_slices
   - core.entity_view_display.node.page.default
   - core.entity_view_display.node.page.teaser
 required: true

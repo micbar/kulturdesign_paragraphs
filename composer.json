@@ -1,0 +1,14 @@
+{
+  "name": "micbar/kulturdesign_paragraphs",
+  "description": "KulturDesign Paragraphs bundles.",
+  "type": "drupal-module",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "micbar",
+      "email": "michael.barz@zeitgestalten.eu"
+    }
+  ]
+}

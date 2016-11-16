@@ -1,0 +1,154 @@
+.paragraph--image-on-right figure {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.paragraph--image-on-left figure {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
+
+.paragraph--type--kd-text-mit-bild figcaption {
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+}
+.paragraph--type--kd-text-mit-bild  .field--type-image img {
+    margin: 0;
+}
+.paragraph--image-on-left img,
+.paragraph--image-on-right img  {
+    width: 100%;
+    height: auto;
+}
+.paragraph--image-ratio-38 figure {
+    width: 38%;
+}
+.paragraph--image-ratio-33 figure {
+    width: 33%;
+}
+.paragraph--image-ratio-25 figure {
+    width: 25%;
+}
+
+.paragraph--type--kd-abschnittsueberschrift {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.kd-abschnittsueberschrift {
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 3.5em;
+    border-bottom: 1px darkgrey dotted ;
+    border-top: 1px darkgrey dotted ;
+    padding: .8em 5em;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.kd-abschnittsueberschrift div {
+    line-height: normal;
+}
+
+.paragraph--type--kd-photo-banner {
+    padding: 5em 2em;
+    margin-top: 1em;
+}
+
+.field--name-field-kd-banner-head.field__item {
+    text-align: center;
+    font-variant: small-caps;
+    color: lightsalmon;
+    font-size: 1.5em;
+    line-height: normal;
+}
+
+.field--name-field-kd-banner-title.field__item {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 3em;
+    line-height: normal;
+    margin: 1rem 0;
+}
+.field--name-field-kd-banner-text.field__item {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-size: 1.1em;
+    line-height: normal;
+}
+
+.field--name-field-kd-banner-link.field__item {
+    text-align: center;
+    margin-top: 2em;
+    line-height: normal;
+}
+
+.field--name-field-kd-banner-link a {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+
+.field--name-field-kd-banner-link a:hover,
+.field--name-field-kd-banner-link a:focus {
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b;
+}
+.paragraph--type--kd-zitat blockquote {
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    background: none;
+}
+.paragraph--type--kd-zitat blockquote:before {
+    content: "\201C";
+    font-size: 6em;
+    color: lightgrey;
+    margin: 0;
+}
+.paragraph--type--kd-zitat blockquote:after {
+    content: "";
+
+}
+
+.paragraph--type--kd-zitat blockquote p.kd-quote-zitat {
+    display: inline-block;
+    font-size: 1.5em;
+    font-style: normal;
+    color: darkgrey;
+    margin-left: 10px;
+}
+
+.paragraph--type--kd-zitat blockquote .kd-quote-source {
+    font-style: normal;
+    color: #0275d8;
+}
+
+.paragraph--type--kd-zitat blockquote .kd-quote-source:before {
+    content: '― ';
+}
+
+

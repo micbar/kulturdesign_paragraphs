@@ -1,0 +1,57 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kd_slices
+    - node.type.page
+    - paragraphs.paragraphs_type.kd_audio_track
+    - paragraphs.paragraphs_type.kd_text
+    - paragraphs.paragraphs_type.kd_video
+  module:
+    - entity_reference_revisions
+id: node.page.field_kd_slices
+field_name: field_kd_slices
+entity_type: node
+bundle: page
+label: Slices
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      kd_text: kd_text
+      kd_video: kd_video
+      kd_audio_track: kd_audio_track
+    target_bundles_drag_drop:
+      kd_mehrere_spalten:
+        weight: -15
+        enabled: false
+      kd_abschnittsueberschrift:
+        weight: -14
+        enabled: false
+      kd_text:
+        enabled: true
+        weight: -13
+      kd_text_mit_bild:
+        weight: -12
+        enabled: false
+      kd_zitat:
+        weight: -11
+        enabled: false
+      kd_bild:
+        weight: -10
+        enabled: false
+      kd_photo_banner:
+        weight: -9
+        enabled: false
+      kd_video:
+        enabled: true
+        weight: 10
+      kd_audio_track:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

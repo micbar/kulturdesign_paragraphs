@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_audio_track.field_kd_audio_track
+    - paragraphs.paragraphs_type.kd_audio_track
+id: paragraph.kd_audio_track.default
+targetEntityType: paragraph
+bundle: kd_audio_track
+mode: default
+content:
+  field_kd_audio_track:
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+hidden:
+  created: true
+  uid: true

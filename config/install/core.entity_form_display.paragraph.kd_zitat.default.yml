@@ -1,0 +1,32 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_zitat.field_kd_quelle
+    - field.field.paragraph.kd_zitat.field_kd_zitat
+    - paragraphs.paragraphs_type.kd_zitat
+  module:
+    - workbench_moderation
+id: paragraph.kd_zitat.default
+targetEntityType: paragraph
+bundle: kd_zitat
+mode: default
+content:
+  field_kd_quelle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_kd_zitat:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

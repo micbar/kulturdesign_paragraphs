@@ -1,0 +1,5 @@
+langcode: de
+status: true
+dependencies: {  }
+id: kd_text_mit_bild
+label: 'Text mit Bild'

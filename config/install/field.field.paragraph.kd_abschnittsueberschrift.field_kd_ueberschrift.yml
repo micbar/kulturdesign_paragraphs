@@ -1,0 +1,18 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kd_ueberschrift
+    - paragraphs.paragraphs_type.kd_abschnittsueberschrift
+id: paragraph.kd_abschnittsueberschrift.field_kd_ueberschrift
+field_name: field_kd_ueberschrift
+entity_type: paragraph
+bundle: kd_abschnittsueberschrift
+label: Überschrift
+description: 'Erstellt eine Überschrift für einen neuen Abschnitt.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

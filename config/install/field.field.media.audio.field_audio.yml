@@ -1,0 +1,26 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_audio
+    - media_entity.bundle.audio
+  module:
+    - file
+id: media.audio.field_audio
+field_name: field_audio
+entity_type: media
+bundle: audio
+label: 'Audio Track'
+description: "Laden Sie einen Audio Track hoch, am Besten im mp3 Format.\r\nUm die Browserkompatibilität zu erhöhen, laden sie noch zusätzlich die gleiche Datei im .ogg und/oder .wav Format hoch.\r\nSie können hier maximal 3 Versionen den <strong>gleichen Datei</strong> hochladen."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'audio-files/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'ogg mp3 wav'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

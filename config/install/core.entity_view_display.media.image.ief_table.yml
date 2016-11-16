@@ -1,0 +1,39 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.ief_table
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.image
+    - image.style.thumbnail
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.ief_table
+targetEntityType: media
+bundle: image
+mode: ief_table
+content:
+  image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  bundle: true
+  created: true
+  field_media_in_library: true
+  label: true
+  langcode: true
+  thumbnail: true
+  uid: true

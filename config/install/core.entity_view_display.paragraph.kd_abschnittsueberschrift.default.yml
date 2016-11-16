@@ -1,0 +1,21 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_abschnittsueberschrift.field_kd_ueberschrift
+    - paragraphs.paragraphs_type.kd_abschnittsueberschrift
+id: paragraph.kd_abschnittsueberschrift.default
+targetEntityType: paragraph
+bundle: kd_abschnittsueberschrift
+mode: default
+content:
+  field_kd_ueberschrift:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

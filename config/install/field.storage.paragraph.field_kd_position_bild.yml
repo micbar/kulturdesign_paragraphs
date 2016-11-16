@@ -1,0 +1,26 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_kd_position_bild
+field_name: field_kd_position_bild
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: 'Bild Links - Text Rechts'
+    -
+      value: right
+      label: 'Bild Rechts - Text Links'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_zitat.field_kd_quelle
+    - field.field.paragraph.kd_zitat.field_kd_zitat
+    - paragraphs.paragraphs_type.kd_zitat
+id: paragraph.kd_zitat.default
+targetEntityType: paragraph
+bundle: kd_zitat
+mode: default
+content:
+  field_kd_quelle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_kd_zitat:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,53 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - filter.format.kd_wysiwyg
+  module:
+    - ckeditor
+format: kd_wysiwyg
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatierung
+          items:
+            - Format
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listen
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Medien
+          items:
+            - Blockquote
+        -
+          name: Werkzeuge
+          items:
+            - PasteFromWord
+            - Language
+            - Source
+            - Maximize
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

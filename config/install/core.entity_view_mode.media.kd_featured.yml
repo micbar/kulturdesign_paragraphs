@@ -1,0 +1,9 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.kd_featured
+label: Featured
+targetEntityType: media
+cache: true

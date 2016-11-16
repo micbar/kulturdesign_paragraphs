@@ -1,0 +1,29 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_kd_verhaeltnis
+field_name: field_kd_verhaeltnis
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '38'
+      label: 'Goldener Schnitt'
+    -
+      value: '33'
+      label: 'Ein Drittel'
+    -
+      value: '25'
+      label: 'Ein Viertel'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

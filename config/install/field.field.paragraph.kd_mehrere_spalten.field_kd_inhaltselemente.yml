@@ -1,0 +1,40 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kd_inhaltselemente
+    - paragraphs.paragraphs_type.kd_bild
+    - paragraphs.paragraphs_type.kd_mehrere_spalten
+    - paragraphs.paragraphs_type.kd_text
+  module:
+    - entity_reference_revisions
+id: paragraph.kd_mehrere_spalten.field_kd_inhaltselemente
+field_name: field_kd_inhaltselemente
+entity_type: paragraph
+bundle: kd_mehrere_spalten
+label: Inhaltselemente
+description: 'Jedes Inhaltselement wird in eine eigene Spalte platziert. Erstellen Sie beispielsweise einen Zweispaltigen Text, indem Sie zwei Text Elemente hinzufügen. Fügen Sie drei hinzu, werden drei Spalten angelegt.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      kd_text: kd_text
+      kd_bild: kd_bild
+    target_bundles_drag_drop:
+      kd_mehrere_spalten:
+        weight: 2
+        enabled: false
+      kd_text:
+        enabled: true
+        weight: 4
+      kd_bild:
+        enabled: true
+        weight: 5
+      kd_text_mit_bild:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

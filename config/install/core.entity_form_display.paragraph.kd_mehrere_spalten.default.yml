@@ -1,0 +1,28 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_mehrere_spalten.field_kd_inhaltselemente
+    - paragraphs.paragraphs_type.kd_mehrere_spalten
+  module:
+    - paragraphs
+    - workbench_moderation
+id: paragraph.kd_mehrere_spalten.default
+targetEntityType: paragraph
+bundle: kd_mehrere_spalten
+mode: default
+content:
+  field_kd_inhaltselemente:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

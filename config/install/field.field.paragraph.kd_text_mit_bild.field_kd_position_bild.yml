@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kd_position_bild
+    - paragraphs.paragraphs_type.kd_text_mit_bild
+  module:
+    - options
+id: paragraph.kd_text_mit_bild.field_kd_position_bild
+field_name: field_kd_position_bild
+entity_type: paragraph
+bundle: kd_text_mit_bild
+label: 'Position Bild'
+description: 'Bestimmen Sie die Ausrichtung des Bildes. Bei Ausrichtung links umfließt der Text das links ausgerichtete Bild auf der Rechten Seite.'
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kd_text
+    - paragraphs.paragraphs_type.kd_text
+  module:
+    - text
+id: paragraph.kd_text.field_kd_text
+field_name: field_kd_text
+entity_type: paragraph
+bundle: kd_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

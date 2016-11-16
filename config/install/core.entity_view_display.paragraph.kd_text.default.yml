@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_text.field_kd_text
+    - paragraphs.paragraphs_type.kd_text
+  module:
+    - text
+id: paragraph.kd_text.default
+targetEntityType: paragraph
+bundle: kd_text
+mode: default
+content:
+  field_kd_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

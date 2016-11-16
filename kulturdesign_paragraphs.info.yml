@@ -1,0 +1,36 @@
+name: 'KulturDesign Paragraphs'
+description: 'Stellt eine Grundauswahl an Slices zur Verfügung.'
+type: module
+core: 8.x
+dependencies:
+  - ckeditor
+  - editor
+  - entity_browser
+  - entity_browser_entity_form
+  - entity_reference_revisions
+  - field
+  - file
+  - filter
+  - image
+  - inline_entity_form
+  - language
+  - lightning_layout
+  - lightning_media
+  - lightning_media_image
+  - lightning_media_video
+  - lightning_workflow
+  - link
+  - media_entity
+  - media_entity_audio
+  - metatag
+  - node
+  - options
+  - ov_audio_player
+  - panelizer
+  - paragraphs
+  - path
+  - text
+  - user
+  - workbench_moderation
+version: 8.x-1.0
+package: KulturDesign

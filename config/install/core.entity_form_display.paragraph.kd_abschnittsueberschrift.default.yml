@@ -1,0 +1,24 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_abschnittsueberschrift.field_kd_ueberschrift
+    - paragraphs.paragraphs_type.kd_abschnittsueberschrift
+  module:
+    - workbench_moderation
+id: paragraph.kd_abschnittsueberschrift.default
+targetEntityType: paragraph
+bundle: kd_abschnittsueberschrift
+mode: default
+content:
+  field_kd_ueberschrift:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

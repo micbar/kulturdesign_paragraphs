@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kd_text.field_kd_text
+    - paragraphs.paragraphs_type.kd_text
+  module:
+    - text
+    - workbench_moderation
+id: paragraph.kd_text.default
+targetEntityType: paragraph
+bundle: kd_text
+mode: default
+content:
+  field_kd_text:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

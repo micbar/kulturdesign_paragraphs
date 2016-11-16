@@ -1,0 +1,27 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kd_video
+    - media_entity.bundle.video
+    - paragraphs.paragraphs_type.kd_video
+id: paragraph.kd_video.field_kd_video
+field_name: field_kd_video
+entity_type: paragraph
+bundle: kd_video
+label: kd_video
+description: 'Hier können Sie Video aus externen Quellen wie z.B. Youtube, Vimeo einbinden.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

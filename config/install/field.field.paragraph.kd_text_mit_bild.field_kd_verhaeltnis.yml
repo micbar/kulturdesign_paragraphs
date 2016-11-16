@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kd_verhaeltnis
+    - paragraphs.paragraphs_type.kd_text_mit_bild
+  module:
+    - options
+id: paragraph.kd_text_mit_bild.field_kd_verhaeltnis
+field_name: field_kd_verhaeltnis
+entity_type: paragraph
+bundle: kd_text_mit_bild
+label: Verhältnis
+description: 'Bestimmen Sie das Breitenverhältnis zwischen Bild und Text.'
+required: true
+translatable: false
+default_value:
+  -
+    value: '38'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

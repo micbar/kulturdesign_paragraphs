@@ -1,0 +1,109 @@
+<?php
+/**
+* @file
+* Defines and themes KulturDesign Parapgraph types.
+*/
+
+use \Drupal\Core\Routing\RouteMatchInterface;
+use \Drupal\file\Entity\File;
+use \Drupal\image\Entity\ImageStyle;
+use \Drupal\media_entity\Entity\Media;
+
+/**
+ * Implements hook_help().
+ */
+function kulturdesign_paragraphs_help($route_name, RouteMatchInterface $route_match) {
+	switch ($route_name) {
+		// Main module help for the kulturdesign_paragraphs module.
+		case 'help.page.kulturdesign_paragraphs':
+			$output = '';
+			$output .= '<h3>' . t('About') . '</h3>';
+			$output .= '<p>' . t('This is a collection of paragraphs types for Drupal 8.') . '</p>';
+			$output .= '<p>' . t('Go to <a href="/admin/structure/paragraphs_type"><code>admin/structure/paragraphs_type</code></a> to see all paragraphs.') . '</p>';
+			return $output;
+
+		default:
+	}
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * Call the base hook from Paragraphs to allow preprocess hooks to work.
+ */
+function kulturdesign_paragraphs_theme() {
+	return array(
+		'paragraph__kd_text' => array(
+			'render element' => 'element',
+			'template' => 'paragraph--kd-text',
+			'base hook' => 'paragraph',
+		),
+		'paragraph__kd_mehrere_spalten' => array(
+			'render element' => 'element',
+			'template' => 'paragraph--kd-mehrere-spalten',
+			'base hook' => 'paragraph',
+		),
+		'paragraph__kd_text_mit_bild' => array(
+			'render element' => 'element',
+			'template' => 'paragraph--kd-text-mit-bild',
+			'base hook' => 'paragraph',
+		),
+		'paragraph__kd_abschnittsueberschrift' => array(
+			'render element' => 'element',
+			'template' => 'paragraph--kd-abschnittsueberschrift',
+			'base hook' => 'paragraph',
+		),
+		'paragraph__kd_zitat' => array(
+			'render element' => 'element',
+			'template' => 'paragraph--kd-zitat',
+			'base hook' => 'paragraph',
+		),
+		'field__paragraph__kd_mehrere_spalten' => array(
+			//'render element' => 'element',
+			'template' => 'field--paragraph--kd-mehrere-spalten',
+			'base hook' => 'field',
+		),
+		'field__paragraph__field_kd_figcaption' => array(
+			//'render element' => 'element',
+			'template' => 'field--paragraph--field-kd-figcaption',
+			'base hook' => 'field',
+		),
+		'field__paragraph__field_kd_quelle' => array(
+			//'render element' => 'element',
+			'template' => 'field--paragraph--field-kd-quelle',
+			'base hook' => 'field',
+		),
+		'field__paragraph__field_kd_zitat' => array(
+			//'render element' => 'element',
+			'template' => 'field--paragraph--field-kd-zitat',
+			'base hook' => 'field',
+		),
+	);
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function kulturdesign_paragraphs_preprocess_paragraph(&$variables) {
+	$variables['#attached']['library'][] = 'kulturdesign_paragraphs/custom';
+}
+
+/**
+ * Implements hook_preprocess_paragraph__type().
+ */
+function kulturdesign_paragraphs_preprocess_paragraph__kd_photo_banner(&$variables) {
+	$paragraph = $variables['paragraph'];
+	$media_id = $paragraph->get('field_kd_featured_bild')->target_id;
+
+	$media = Media::load($media_id);
+	$file_id = $media->image->target_id;
+
+
+	$file = File::load($file_id);
+	$path = $file->getFileUri();
+	$url = file_url_transform_relative(ImageStyle::load('kd_banner')->buildUrl($path));
+
+	$variables['attributes']['style'][] = 'background-image: url("' . $url . '");';
+	$variables['attributes']['style'][] = 'background-size: cover;';
+	$variables['attributes']['style'][] = 'background-position: center center;';
+}

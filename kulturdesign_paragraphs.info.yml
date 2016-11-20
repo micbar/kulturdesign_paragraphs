@@ -12,8 +12,9 @@ dependencies:
   - file
   - filter
   - image
-  - kulturdesign_entity_browsers
   - inline_entity_form
+  - kulturdesign_entity_browsers
+  - kulturdesign_media_audio
   - language
   - lightning_layout
   - lightning_media

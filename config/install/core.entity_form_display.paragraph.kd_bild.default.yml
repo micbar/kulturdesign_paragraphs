@@ -2,6 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.kd_image_browser
     - field.field.paragraph.kd_bild.field_kd_bild
     - paragraphs.paragraphs_type.kd_bild
   module:

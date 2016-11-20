@@ -2,6 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.kd_image_browser
     - field.field.paragraph.kd_text_mit_bild.field_kd_featured_bild
     - field.field.paragraph.kd_text_mit_bild.field_kd_figcaption
     - field.field.paragraph.kd_text_mit_bild.field_kd_position_bild

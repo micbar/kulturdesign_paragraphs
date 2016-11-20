@@ -17,7 +17,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'audio-files/[date:custom:Y]-[date:custom:m]'
+  file_directory: 'public://audio-files/[current-user:uid]/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'ogg mp3 wav'
   max_filesize: ''
   description_field: false

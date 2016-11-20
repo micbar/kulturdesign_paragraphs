@@ -2,15 +2,12 @@ bundle: kulturdesign
 excluded:
   - core.entity_form_display.node.page.default
   - core.entity_form_display.media.audio.default
-  - field.field.node.page.field_kd_slices
   - field.field.media.audio.field_audio
   - field.field.media.audio.field_media_in_library
-  - field.storage.node.field_kd_slices
   - field.storage.media.field_audio
   - core.entity_view_display.node.page.default
   - core.entity_view_display.node.page.teaser
   - core.entity_view_display.media.audio.default
-  - core.entity_view_display.media.audio.ief_table
   - language.content_settings.media.audio
   - media_entity.bundle.audio
 required: true

@@ -20,6 +20,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: media_thumbnail
+    region: content
 hidden:
   created: true
   uid: true

@@ -3,3 +3,6 @@ status: true
 dependencies: {  }
 id: kd_bild
 label: Bild
+icon_uuid: null
+description: null
+behavior_plugins: {  }

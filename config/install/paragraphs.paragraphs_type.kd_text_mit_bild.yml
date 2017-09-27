@@ -3,3 +3,6 @@ status: true
 dependencies: {  }
 id: kd_text_mit_bild
 label: 'Text mit Bild'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

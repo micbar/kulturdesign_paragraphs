@@ -2,6 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.kulturdesign_media_browser
     - field.field.paragraph.kd_text_mit_bild.field_kd_featured_bild
     - field.field.paragraph.kd_text_mit_bild.field_kd_figcaption
     - field.field.paragraph.kd_text_mit_bild.field_kd_position_bild
@@ -18,18 +19,19 @@ bundle: kd_text_mit_bild
 mode: default
 content:
   field_kd_featured_bild:
+    type: entity_browser_entity_reference
     weight: 0
     settings:
-      entity_browser: kd_image_browser
+      entity_browser: kulturdesign_media_browser
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
       open: true
       selection_mode: selection_append
       field_widget_display_settings:
-        view_mode: embedded
+        view_mode: thumbnail
+    region: content
     third_party_settings: {  }
-    type: entity_browser_entity_reference
   field_kd_figcaption:
     weight: 1
     settings:
@@ -37,11 +39,13 @@ content:
       placeholder: Bildbeschreibung
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_kd_position_bild:
     weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
   field_kd_text:
     weight: 4
     settings:
@@ -49,11 +53,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_kd_verhaeltnis:
     weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
 hidden:
   created: true
   status: true

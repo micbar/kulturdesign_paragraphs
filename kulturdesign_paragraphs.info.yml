@@ -13,6 +13,7 @@ dependencies:
   - filter
   - image
   - inline_entity_form
+  - kulturdesign_entity_browsers
   - language
   - lightning_layout
   - lightning_media

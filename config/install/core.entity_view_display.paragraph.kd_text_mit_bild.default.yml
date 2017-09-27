@@ -23,6 +23,7 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
   field_kd_figcaption:
     type: string
     weight: 2
@@ -30,12 +31,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   field_kd_text:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
 hidden:
   created: true
   field_kd_position_bild: true

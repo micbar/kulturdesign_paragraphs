@@ -13,7 +13,7 @@ bundle: kd_mehrere_spalten
 mode: default
 content:
   field_kd_inhaltselemente:
-    type: entity_reference_paragraphs
+    type: paragraphs
     weight: 6
     settings:
       title: Paragraph
@@ -21,7 +21,11 @@ content:
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
+      closed_mode: summary
+      autocollapse: none
+      default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
 hidden:
   created: true
   status: true

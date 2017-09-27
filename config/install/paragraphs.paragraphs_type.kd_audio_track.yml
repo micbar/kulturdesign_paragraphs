@@ -3,3 +3,6 @@ status: true
 dependencies: {  }
 id: kd_audio_track
 label: 'Audio Track'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

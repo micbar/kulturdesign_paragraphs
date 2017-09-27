@@ -2,7 +2,6 @@ langcode: de
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.media.media_browser
     - field.field.paragraph.kd_video.field_kd_video
     - paragraphs.paragraphs_type.kd_video
   module:
@@ -17,7 +16,7 @@ content:
   field_kd_video:
     weight: 6
     settings:
-      form_mode: media_browser
+      form_mode: default
       override_labels: true
       label_singular: Video
       label_plural: Videos
@@ -26,8 +25,9 @@ content:
       match_operator: CONTAINS
     third_party_settings:
       entity_browser_entity_form:
-        entity_browser_id: kd_video_browser
+        entity_browser_id: kulturdesign_media_browser
     type: inline_entity_form_complex
+    region: content
 hidden:
   created: true
   status: true

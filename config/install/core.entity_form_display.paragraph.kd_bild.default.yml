@@ -2,6 +2,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - entity_browser.browser.kulturdesign_media_browser
     - field.field.paragraph.kd_bild.field_kd_bild
     - paragraphs.paragraphs_type.kd_bild
   module:
@@ -13,17 +14,19 @@ bundle: kd_bild
 mode: default
 content:
   field_kd_bild:
-    weight: 6
+    type: entity_browser_entity_reference
+    weight: 0
     settings:
-      entity_browser: kd_image_browser
-      field_widget_display: label
+      entity_browser: kulturdesign_media_browser
+      field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
       open: true
       selection_mode: selection_append
-      field_widget_display_settings: {  }
+      field_widget_display_settings:
+        view_mode: thumbnail
+    region: content
     third_party_settings: {  }
-    type: entity_browser_entity_reference
 hidden:
   created: true
   status: true
